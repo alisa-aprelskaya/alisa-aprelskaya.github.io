@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Как против нас используют эффект избегания потерь</title>
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "pt astra serif";
+  src:
+    local("PT Astra Serif Regular"), url("pt-astra-serif_regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "pt astra sans";
+  src:
+    local("PT Astra Sans"), url("pt-astra-sans_regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "pt astra sans";
+  src:
+    local("PT Astra Sans Bold"), url("pt-astra-sans_bold.ttf");
+  font-weight: 700;
+}
+
+
+body {
+  font-family: pt astra serif, serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.3;
+  background-color: #ffffff;
+}
+a {
+  color: #42a22f;
+  text-decoration: none;
+}
+a:visited {
+  color: #A15DB0;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset:20%;
+}
+h1 {
+  font-family: pt astra sans, sans-serif;
+  font-weight: 700;  
+  font-size: 3em;
+  margin-bottom: 1em;
+  line-height: 1.1;
+  margin-left: -0.03em;
+  max-width: 70ch;
+}
+h2 {
+  font-family: pt astra sans, sans-serif;
+  font-weight: 700;
+  max-width: 70ch;
+  font-size:2em;
+  line-height: 1.1;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: -0.03em;  
+}
+p {
+  font-size: 1.2em;
+  max-width: 70ch;
+  margin-bottom: 0.5rem;
+}
+p.ex {
+    margin-bottom: 0;
+}
+p.lead {
+  font-size: 2em;
+  line-height: 1.1;  
+  margin-left: -0.03em;
+  margin-bottom: 1em;
+}
+main {
+  padding-top: 5em;
+  padding-bottom: 7em;
+  padding-left: 8vw;
+  padding-right: 9vw;
+}
+footer {
+  background-color: #e2e4e1;
+  padding-top: 3em;
+  padding-bottom: 7em;
+  padding-left: 8vw;
+  padding-right: 9vw;
+}
+div.row {
+  display: flex;
+  flex-direction: row;
+  max-width: 75vw;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+div.txt {
+  flex-basis: 80%;
+  flex-grow: 0;
+}
+div.pic {
+  flex-basis: 40%;
+  max-width: 40%;
+  flex-grow: 1;
+  font-family: pt astra sans, sans-serif;
+  font-weight: 400; 
+  font-size: 0.6rem;
+  margin-bottom: 1em;
+}
+div.note {
+  flex-basis: 20%;
+  max-width: 20%;
+  padding-bottom: 1em;
+  padding-left:3em;
+  font-family: pt astra sans, sans-serif;
+  font-weight: 400; 
+  font-size: 0.6rem;
+}  
+
+img {
+  width: auto;
+  max-width: 30vw;
+  max-height: 80vh;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+li:last-child {
+  margin-bottom: 0.5em;
+}  
+
+ul.ex {
+  font-family: pt astra sans, sans-serif;
+  font-weight: 400;
+  color: #7f1212;
+}
+
+@media screen and (max-width: 768px) {
+  div.row {
+    flex-direction: column;
+/*    align-items: stretch;*/
+  }
+
+  img {
+    max-width: 60vw;
+    max-height: 50vh;
+  }
+  body {
+    font-size: 0.8rem;
+  }
+  div.note {
+    padding-left:0;
+    max-width: 75vw;}
+  div.pic {
+    max-width: 75vw;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+<main>
+<div class=row><div class=txt>
+
+<h1>Как против нас используют эффект избегания потерь</h1>
+
+<p class=lead>Маркетологи охотятся за&nbsp;нашими деньгами, журналисты&nbsp;&mdash; за&nbsp;вниманием, а&nbsp;политики&nbsp;&mdash; за&nbsp;лояльностью. Поговорим об&nbsp;особенности мозга, которую они эксплуатируют.</p>
+
+  <p class=ex>Это мой план на&nbsp;день:</p>
+<ul><li>Сварить суп</li>
+<li>Позвонить другу</li>
+<li>Почитать книжку</li>
+<li>Дописать эту статью</li></ul>
+  <p class=ex>А&nbsp;это план на&nbsp;день по&nbsp;мнению приложений в&nbsp;моём телефоне:</p>
+<ul><li>Купить кроссовки</li>
+<li>Заказать пиццу</li>
+<li>Попаниковать</li>
+<li>Купить квартиру</li>
+<li>Эмигрировать</li></ul>
+
+<p>Манипуляцию легко принять за&nbsp;заботу, если не&nbsp;знать об&nbsp;эффекте избегания потерь. В&nbsp;статье разберём, как он&nbsp;устроен. Опираться будем на&nbsp;исследования Даниэля Канемана&nbsp;&mdash; за&nbsp;применение психологической методики в&nbsp;экономической науке он&nbsp;получил Нобелевскую премию.</p></div>
+<div class=note><p><a href="https://www.litres.ru/book/daniel-kaneman/dumay-medlenno-reshay-bystro-6444517/">Книга Даниэля Канемана «Думай медленно… Решай быстро»</a></p></div></div>
+
+<div class=row><div class=txt><p>Начнём с&nbsp;простых проявлений эффекта, затем перейдём к&nbsp;менее очевидным. А&nbsp;в&nbsp;конце обсудим, как поставить искажение себе на&nbsp;службу. Здесь не&nbsp;будет длинных списков сложных слов&nbsp;&mdash; только польза.</p>
+
+<h2>С нами потери не&nbsp;грозят</h2>
+<p>Мы&nbsp;настолько не&nbsp;любим потерь, что избегаем ситуаций, где можем с&nbsp;ними встретиться. Участники экспериментов Канемана отказывались от&nbsp;выгодного пари из-за вероятности проигрыша. Потери для них оказались весомее выгод примерно вдвое.</p></div></div>
+
+<div class=row><div class=txt><p>Механизм очень древний. Кейт Чен с&nbsp;коллегами обнаружили такое&nbsp;же поведение у&nbsp;обезьян-капуцинов. Обезьянам выдавали жетоны, за&nbsp;которые они могли &laquo;покупать&raquo; еду у&nbsp;одного из&nbsp;исследователей на&nbsp;выбор. Первый показывал обезьяне два кусочка яблока, а&nbsp;вторая&nbsp;&mdash; один, но&nbsp;в&nbsp;обмен на&nbsp;жетон оба отдавали только один. Обезьяны не&nbsp;соблазнились двойным угощением&nbsp;&mdash; все они предпочли &laquo;честного&raquo; экспериментатора, с&nbsp;которым ничего не&nbsp;теряли. </p> </div>
+
+<div class=note><p><a href="https://www.journals.uchicago.edu/doi/10.1086/503550">How Basic Are Behavioral Biases? Evidence from Capuchin Monkey Trading Behavior</a></p></div></div>
+
+<div class=row><div class=pic><img src="img/capuchin1.png" alt="Сердитый капуцин и учёный с двумя яблоками"><p>Капуцин видит два яблока, а&nbsp;получает одно</p></div>
+<div class=pic><img src="img/capuchin2.png" alt="Довольный капуцин и учёный с одним яблоком"><p>В&nbsp;следующий раз он&nbsp;выбирает исследовательницу, которая сразу предлагает одно яблоко</p></div></div>
+
+<div class=row><div class=txt><p class=ex>Как и&nbsp;обезьянам, нам не&nbsp;нравится получать меньше ожидаемого. И&nbsp;неважно, если ожидания существовали только в&nbsp;воображении&nbsp;&mdash; например, мы&nbsp;проиграли в&nbsp;лотерее или рассчитывали на&nbsp;повышение зарплаты, а&nbsp;его не&nbsp;случилось. Манипуляторы знают об этом и создают образ честного дельца, который так с&nbsp;нами не&nbsp;поступит:</p>
+<ul class=ex><li>
+Мы не&nbsp;обещаем золотых гор</li>
+<li>
+Стабильность лучше резких реформ</li>
+<li>
+У&nbsp;нас не&nbsp;100 функций&nbsp;&mdash; у&nbsp;нас&nbsp;3, но&nbsp;нужных</li></ul>
+<p class=ex>Ещё одна находка Канемана: гарантированный выигрыш непропорционально повышает ценность сделки. Математически разница между&nbsp;99% и&nbsp;100% небольшая, а&nbsp;психологически&nbsp;&mdash; огромная. Отсюда посыл &laquo;Вы&nbsp;ничем не&nbsp;рискуете&raquo;:</p>
+<ul class=ex><li>Пожизненная гарантия</li>
+<li>Не&nbsp;понравится&nbsp;&mdash; вернём деньги</li></ul>
+<p>Так рекламируют даже шариковые ручки, хотя пожизненная гарантия им&nbsp;ни&nbsp;к&nbsp;чему. </p>
+<p>На&nbsp;том&nbsp;же эффекте держится другая стратегия&nbsp;&mdash; не&nbsp;успокаивать, а&nbsp;пугать.</p>
+
+<div class=row><div class=txt><h2>Вы&nbsp;уже теряете, но&nbsp;мы&nbsp;вас спасём</h2>
+<p class=ex>Неминуемые потери приводят нас в&nbsp;ужас и&nbsp;толкают на&nbsp;импульсивные решения. Этим пользуются магазины и&nbsp;сервисы:</p>
+<ul class=ex><li>До&nbsp;конца распродажи 01:00:32</li>
+<li>Вы&nbsp;пропускаете концерты и&nbsp;выставки</li>
+<li>500 бонусов сгорят через 3&nbsp;дня</li>
+<li>Последний шанс сохранить подписку со&nbsp;скидкой</li></ul>
+<p class=ex>СМИ:</p>
+<ul class=ex><li>Россиян могут лишить...</li>
+<li>Эти продукты исчезнут с&nbsp;прилавков&nbsp;&mdash; успейте купить</li></ul>
+<p class=ex>И&nbsp;мошенники:</p>
+<ul class=ex><li>Срочно переведите деньги на&nbsp;безопасный счёт</li>
+<li>Проблема с&nbsp;доставкой, оплатите курьера</li>
+<li>Вакансия снята с&nbsp;публикации за&nbsp;нарушение&nbsp;&mdash; предлагаем вам другую</li></ul>
+<p>Схема одна и&nbsp;та&nbsp;же: &laquo;Ваши ресурсы потрачены впустую, но&nbsp;мы&nbsp;это исправим&raquo;. О&nbsp;нас позаботились, и&nbsp;остаётся только совершить простое действие&nbsp;&mdash; кликнуть, купить.</p>
+<p>В&nbsp;реальности магазин предлагает &laquo;эксклюзивные&raquo; скидки каждый день всем посетителям. Концертов много, а&nbsp;если&nbsp;бы мы&nbsp;хотели на&nbsp;конкретный, то&nbsp;узнали&nbsp;бы о&nbsp;нём не&nbsp;из&nbsp;рассылки. Продукт, который якобы исчезнет, нужен раз в&nbsp;пять лет. Но&nbsp;в&nbsp;спешке полная картина забывается, и&nbsp;мы&nbsp;верим только своим глазам.<p>
+<p>Взвесить выгоды и&nbsp;затраты забывают даже профессионалы в&nbsp;спокойной обстановке. Канеман рассказывает, как его соратник Амос Тверски провёл эксперимент со&nbsp;специалистами в&nbsp;области здравоохранения&nbsp;&mdash; задолго до&nbsp;коронавируса. Тверски предложил участникам выбор из&nbsp;двух программ борьбы с&nbsp;гипотетической болезнью, но&nbsp;выдал им&nbsp;разные формулировки. Специалисты выбрали программу&nbsp;А, когда речь шла о&nbsp;спасении, и&nbsp;программу&nbsp;Б, когда акцент был на&nbsp;смертях.</p> </div></div>
+
+<div class=row><div class=pic><img src="img/framing1.png" alt="Смайлик и два черепа">
+<p>Программа А: 200 человек будут спасены</p>
+<p>Программа А: 400 человек умрут</p></div>
+<div class=pic><img src="img/framing2.png" alt="Три смайлика и дважды по три черепа"><p>Программа&nbsp;Б: с&nbsp;вероятностью 1/3 будут спасены 600&nbsp;человек, и&nbsp;с&nbsp;вероятностью 2/3 никто не&nbsp;спасётся</p>
+<p>Программа&nbsp;Б: с&nbsp;вероятностью 1/3 никто не&nbsp;умрёт, и&nbsp;с&nbsp;вероятностью 2/3 умрут 600 человек</p></div></div>
+
+<div class=row><div class=txt><p class=ex>Та&nbsp;же уловка встречается в&nbsp;рекламе и&nbsp;новостях. Манипулятор рисует потерю, и&nbsp;мы&nbsp;готовы на&nbsp;всё, лишь&nbsp;бы её&nbsp;избежать:</p>
+<ul class=ex><li>Хватит терять деньги на&nbsp;ставках</li>
+<li>Вам больше не&nbsp;будет стыдно перед гостями</li>
+<li>Не&nbsp;голосуйте за&nbsp;Пупкина, он&nbsp;повысит налоги</li>
+<li>Лечитесь травами, от&nbsp;прививки умерли 10&nbsp;человек</li></li>
+<li>Бойкотируйте торговый центр на&nbsp;месте парка</li></ul>
+<p class=ex>Зеркальный вариант&nbsp;&mdash; описать своё предложение как инвестицию. Жертвы остаются за&nbsp;кадром, а&nbsp;блага уже как&nbsp;бы в&nbsp;кармане, и&nbsp;отказываться от&nbsp;них не&nbsp;хочется:</p>
+<ul class=ex><li>Через год с&nbsp;нашим вкладом заработаете 100&thinsp;000&thinsp;₽</li>
+<li>Наш курс&nbsp;&mdash; гарантия трудоустройства</li>
+<li>Премии до&nbsp;200&thinsp;000&thinsp;₽, без штрафов</li>
+<li>Сделайте прививку и&nbsp;будьте спокойны</li>
+<li>В&nbsp;новом торговым центре будут отдыхать ваши дети</li></ul>
+<p>Чтобы не&nbsp;попасть в&nbsp;ловушку, дайте себе время рассмотреть предложение с&nbsp;разных сторон. Если вам показывают только потери или только выгоды, да&nbsp;ещё торопят&nbsp;&mdash; вами манипулируют.</p></div></div>
+
+<div class=row><div class=txt><p class=ex>С&nbsp;анализом поможет квадрат Декарта. Запишите ответы на&nbsp;четыре вопроса:</p>
+<ul><li>Что я&nbsp;приобрету, если соглашусь?</li>
+<li>Что я&nbsp;приобрету, если откажусь?</li>
+<li>Что я&nbsp;потеряю, если соглашусь?</li>
+<li>Что я&nbsp;потеряю, если откажусь?</li></ul>
+<p>Записи помогут переключиться с&nbsp;эмоций на&nbsp;рассуждения и&nbsp;наглядно сравнить плюсы с&nbsp;плюсами, а&nbsp;минусы&nbsp;&mdash; с&nbsp;минусами.</p></div>
+<div class=note><p><a href="https://kc.hse.ru/2018/09/06/kvadrat-dekarta-dlya-prinyatiya-yeffekti/">О&nbsp;квадрате Декарта на&nbsp;сайте НИУ ВШЭ</a></p></div></div>
+
+<div class=row><div class=pic><img src="img/vklad1.png" alt="Взлетающий вверх график: «Ваш доход через год — +100К»"><p>Реклама</p></div>
+<div class=pic><img src="img/vklad2.png" alt="Квадрат с вариантами: «Если да: +, -. Если нет: +,-"><p>Анализ</p></div></div>
+
+<div class=row><div class=txt><h2>Не&nbsp;пропадать&nbsp;же добру</h2>
+<p class=ex>Избегание потерь делает нас конформистами. Лучше оставить всё как есть, чем лишить себя выгоды. Об&nbsp;этом знают дизайнеры таких чекбоксов:</p>
+<ul class=ex><li>✓ Я&nbsp;согласна получать на&nbsp;почту выгодные предложения</li>
+<li>✓ Оплатить страховку 290 рублей</li></ul>
+<p>Когда галочку уже поставили за&nbsp;нас, мы&nbsp;опасаемся её&nbsp;снимать: вдруг пригодится? Сделать и&nbsp;пожалеть больнее, чем не&nbsp;сделать и&nbsp;пожалеть.</p>
+<p class=ex>А&nbsp;вот как нас заманивают подарками и&nbsp;мнимыми достижениями:</p>
+<ul class=ex><li>Дарим постоянную скидку в&nbsp;нашем магазине</li>
+<li>У&nbsp;вас уже есть доступ к&nbsp;100 урокам&nbsp;&mdash; но&nbsp;ненадолго</li>
+<li>Ваш уровень активности упал</li>
+<li>5&nbsp;человек лайкнули ваше фото&nbsp;&mdash; не&nbsp;ответите, и&nbsp;они уйдут</li></ul>
+<p>Мы&nbsp;готовы потратить реальные деньги, лишь&nbsp;бы не&nbsp;потерять виртуальный бонус. И&nbsp;мало кто пользуется той самой гарантией возврата средств, даже если продукт не&nbsp;понравился.</p>
+<p>Канеман убедился, как люди ценят безделушки. Трети участников эксперимента он&nbsp;подарил по&nbsp;брендированной кружке. Другие могли перекупить&nbsp;её, оплатив из&nbsp;своего кармана. А&nbsp;третьим деньги выдали экспериментаторы&nbsp;&mdash; можно было выторговать кружку либо уйти с&nbsp;деньгами. Для всех трёх групп сувенир оказался привлекательнее. Более того, обладатели кружек оценили их&nbsp;вдвое выше, чем покупатели. </p></div></div>
+
+<div class=row><div class=pic><img src="img/mug.png" alt="Один участник эксперимента пытается продать кружку другому за 8 $, а тот согласен купить только за 4"><p>Расстаться с&nbsp;кружкой вдвое труднее, чем с&nbsp;деньгами</p></div></div>
+
+<div class=row><div class=txt><p class=ex>Ещё тяжелее отказаться от&nbsp;плодов своего труда:</p>
+<ul class=ex><li>Соберите свою кухню в&nbsp;онлайн-конструкторе</li>
+<li>Пройдите тестовый уровень бесплатно</li></ul></div></div>
+
+<div class=row><div class=txt><p>Исследователь Майкл Нортон окрестил это явление эффектом Икеи. Он&nbsp;нарочно использовал в&nbsp;эксперименте стандартную мебель, а&nbsp;не&nbsp;творческую поделку. Участники оценили коробку IKEA Kassett, которую собрали своими руками, выше, чем разобранную. </p></div>
+<div class=note><p><a href="https://myscp.onlinelibrary.wiley.com/doi/10.1016/j.jcps.2011.08.002">The IKEA Effect: When Labor Leads to&nbsp;Love </a></p></div></div>
+
+<div class=row><div class=pic><img src="img/ikea.png" alt="Разобранную коробку оценили в 48 центов, собранную — в 78"><p>Коробка после сборки кажется ценнее</p></div></div>
+
+<div class=row><div class=txt><p>А&nbsp;вот трату денег мы&nbsp;не&nbsp;воспринимаем как потерю. Расплатиться за&nbsp;покупку&nbsp;&mdash; всё равно что разменять тысячную купюру на&nbsp;сотни: мозг различает ресурсы для потребления и&nbsp;ресурсы для обмена.</p>
+<p>Канеман смог доказать, что деньги могут восприниматься и&nbsp;как плата, и&nbsp;как потеря. Он&nbsp;предложил подопытным две лотереи: одна&nbsp;&mdash; с&nbsp;бесплатным входом и&nbsp;90-процентным шансом проиграть 5&thinsp;$, вторая&nbsp;&mdash; с&nbsp;входом за&nbsp;5&thinsp;$&nbsp;и&nbsp;90-процентным шансом не&nbsp;получить ничего. Экономически это одно и&nbsp;то&nbsp;же&nbsp;&mdash; небольшой шанс стать на&nbsp;95&thinsp;$&nbsp;богаче. Однако большинство предпочли второй вариант.</p></div></div>
+
+<div class=row><div class=pic><img src="img/loss-cost.png" alt="Эксперимент с двумя лотереями"><p>Заплатить приятнее, чем проиграть</p></div></div>
+
+<div class=row><div class=txt><p>Возможно, на&nbsp;этом основана знаменитая ловушка невозвратных затрат&nbsp;&mdash; это когда мы&nbsp;не&nbsp;бросаем безнадёжные проекты, потому что нам жаль вложенных средств. Пока проект продолжается, мы&nbsp;думаем об&nbsp;этих средствах как о&nbsp;плате за&nbsp;участие, а&nbsp;не&nbsp;как о&nbsp;потере.</p>
+<p>Конечно, этим тоже пользуются манипуляторы, выдавая потерю за&nbsp;плату:</p>
+<ul class=ex><li>Убрали, чтобы сделать удобнее</li>
+<li>Целый месяц скидок за&nbsp;100 рублей</li></ul>
+<p>Зато так можно защитить себя от&nbsp;страха упустить выгодное предложение. Скажите себе, что несэкономленными деньгами платите за&nbsp;спокойствие, и&nbsp;отпишитесь от&nbsp;особо назойливых программ лояльности.</p>
+</div></div>
+
+
+<div class=row><div class=txt><h2>Везде манипуляции?</h2>
+
+<p>Везде. Главное&nbsp;&mdash; помнить, что у&nbsp;мозга сбит прицел: по&nbsp;умолчанию мы&nbsp;переоцениваем потери и&nbsp;хватаемся за&nbsp;обещания безопасности. Чтобы принять важное решение рационально, разложите по&nbsp;полочкам: какую ценность вам предлагают и&nbsp;чем за&nbsp;неё нужно заплатить? Скорее всего, ответ будет не&nbsp;таким, как казалось на&nbsp;первый взгляд.</p>
+
+<p>Напоследок&nbsp;&mdash; способ извлечь из&nbsp;эффекта пользу. Если нужно уговорить себя на&nbsp;долгий проект, представьте его как избавление от&nbsp;потерь. Не&nbsp;три часа скучных лекций, а&nbsp;первый шаг к&nbsp;свободе. </p>
+
+<p>А&nbsp;чтобы не&nbsp;бросить на&nbsp;середине, держите перед глазами достигнутые результаты. Так работают дневники тренировок или дней без табака. </p>
+
+<p>Не&nbsp;наказывайте себя за&nbsp;пропуски слишком строго. Ваш результат никто не&nbsp;отнимет, главное&nbsp;&mdash; не&nbsp;останавливаться.</p>
+</div></div>
+
+
+
+
+
+</main>
+<footer>
+<p>Написала, проиллюстрировала и&nbsp;сверстала Алиса Толстова для Школы Бюро</p>
+<p>Шрифт: PT&nbsp;Astra Sans, PT&nbsp;Astra Serif</p>
+
+
+
+</footer>
+  </body>
+  </html>  
